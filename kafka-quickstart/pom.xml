@@ -30,11 +30,13 @@
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/io.opentracing.contrib/opentracing-kafka-client -->
+		<dependency>
+		    <groupId>io.quarkus</groupId>
+		    <artifactId>quarkus-smallrye-opentracing</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>io.opentracing.contrib</groupId>
 			<artifactId>opentracing-kafka-client</artifactId>
-			<version>0.1.15</version>
 		</dependency>
 
 		<dependency>
